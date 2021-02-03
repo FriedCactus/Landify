@@ -11,10 +11,7 @@ $text: #18191f;
   &__row {
     display: flex;
     justify-content: space-between;
-    padding-top: 155px;
-  }
-
-  &__left {
+    padding: 155px 0 20px 0;
   }
 
   &__title {
@@ -45,5 +42,19 @@ $text: #18191f;
 .phone {
   img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .organize {
+    &__row {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-bottom: 40px;
+    }
   }
 }
