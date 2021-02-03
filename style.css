@@ -98,7 +98,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 155px 0 20px 0;
+  padding: 155px 0 10px 0;
 }
 .organize__title {
   color: #18191f;
@@ -144,6 +144,31 @@ a:hover {
     margin-bottom: 40px;
   }
 }
+.logo-clouds__row {
+  margin: 16px 0;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-top: 4px solid rgba(0, 0, 0, 0.03);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.03);
+  padding: 24px 0;
+}
+.logo-clouds__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 891px;
+  padding-top: 10px;
+}
+
 html {
   font-family: "Manrope", sans-serif;
 }
