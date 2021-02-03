@@ -24,6 +24,7 @@ $text: #18191f;
     align-items: flex-end;
     img {
       margin-left: 12px;
+      flex: 0 0 auto;
     }
   }
 }
@@ -47,4 +48,12 @@ $text: #18191f;
 .more {
   background: url("img/header/down.svg") right center no-repeat;
   padding-right: 22px;
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__right {
+      display: none;
+    }
+  }
 }
