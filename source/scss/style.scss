@@ -4,10 +4,12 @@
 @import "main/logo-clouds";
 @import "main/features";
 @import "main/customers.scss";
+@import "main/achievments.scss";
 
 $text: #18191f;
 
 html {
+  color: $text;
   font-family: "Manrope", sans-serif;
 }
 

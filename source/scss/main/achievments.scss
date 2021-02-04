@@ -1,0 +1,75 @@
+.achievments {
+  &__row {
+    display: flex;
+    margin: 82px auto;
+  }
+
+  &__columns {
+  }
+
+  &__left-column {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    padding-right: 30%;
+    padding-top: 2px;
+    margin-bottom: 8px;
+  }
+
+  &__right-column {
+    flex: 0 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex: 0 1 255px;
+    padding: 0 15px;
+    padding: 0 15px;
+    margin-bottom: 40px;
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+
+  &__logo {
+    flex: 0 0 auto;
+    margin-right: 16px;
+    padding-top: 5px;
+  }
+
+  &__description {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  &__span {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievments {
+    &__row {
+      flex-direction: column;
+    }
+
+    &__right-column {
+      justify-content: center;
+    }
+
+    &__title {
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+  }
+}
