@@ -46,6 +46,11 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+.header__left img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
 .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +185,7 @@ a:hover {
 .features__row {
   color: #18191f;
   text-align: center;
-  margin: 78px 0;
+  margin: 78px 0 0 0;
 }
 .features__top {
   max-width: 540px;
@@ -218,7 +223,6 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 64px;
 }
 .item__logo {
   -webkit-box-flex: 0;
@@ -235,6 +239,7 @@ a:hover {
 .item__description {
   font-size: 16px;
   line-height: 26px;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 542px) {
@@ -250,6 +255,118 @@ a:hover {
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     padding: 0 30px;
+  }
+}
+.main__customers {
+  background: #d5fafc;
+  color: #18191f;
+}
+
+.customers__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("img/main/customers/Quote.svg") 15px 64px no-repeat;
+  padding: 120px 0 45px 0;
+  margin: 0 -15px;
+}
+.customers__left-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-right: 15px;
+  max-width: 460px;
+}
+.customers__right-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-left: 15px;
+  max-width: 460px;
+}
+
+.left-column__titles {
+  margin-bottom: 24px;
+}
+.left-column__title {
+  margin-bottom: 8px;
+}
+.left-column__item {
+  float: right;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+          box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+  max-width: 350px;
+  margin-bottom: 32px;
+}
+.column_big {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: none;
+}
+.column__logo {
+  margin-bottom: 28px;
+}
+.column__description {
+  padding-left: 32px;
+  background: url("img/main/customers/Quote-mini.svg") top left no-repeat;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 24px;
+}
+.column__title {
+  padding-left: 32px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+}
+.column__job {
+  padding-left: 32px;
+  color: #969bab;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.right-column__top {
+  margin-top: 47px;
+}
+.right-column__item {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .left-column__titles {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .column {
+    max-width: none;
+  }
+
+  .customers__left-column, .customers__right-column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
   }
 }
 html {

@@ -4,7 +4,7 @@ $text: #18191f;
   &__row {
     color: $text;
     text-align: center;
-    margin: 78px 0;
+    margin: 78px 0 0 0;
   }
 
   &__top {
@@ -36,7 +36,6 @@ $text: #18191f;
 .item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 64px;
   &__logo {
     flex: 0 0 auto;
     margin-bottom: 18px;
@@ -52,6 +51,7 @@ $text: #18191f;
   &__description {
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 64px;
   }
 }
 

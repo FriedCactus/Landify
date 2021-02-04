@@ -13,6 +13,9 @@ $text: #18191f;
   &__left {
     display: flex;
     align-items: center;
+    img {
+      flex: 0 0 auto;
+    }
   }
 
   &__menu {
