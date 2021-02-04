@@ -1,0 +1,53 @@
+.trends {
+  &__row {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    padding: 64px 0;
+  }
+
+  &__top {
+    display: flex;
+    margin: 0 -15px 48px -15px;
+  }
+
+  &__title,
+  &__text {
+    flex: 0 1 50%;
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 32px;
+    margin-top: 6px;
+  }
+
+  &__bottom {
+  }
+
+  &__cover {
+    img {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .trends {
+    text-align: center;
+    &__top {
+      flex-direction: column;
+      padding: 0 30px;
+    }
+
+    &__cover {
+      display: none;
+    }
+  }
+}
