@@ -1,0 +1,95 @@
+.main {
+  &__app {
+    background-color: #2ec5ce;
+  }
+}
+.app {
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -22px;
+  }
+
+  &__column {
+    flex: 0 1 540px;
+    padding: 0 22px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__subtitle {
+    margin-bottom: 48px;
+  }
+
+  &__about {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    margin-right: 12px;
+  }
+}
+.left-side {
+  flex: 0 0 50%;
+  margin-top: 68px;
+}
+
+.right-side {
+  display: flex;
+  &__phone-top {
+    display: flex;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    margin-right: 32px;
+  }
+
+  &__phone-bottom {
+    flex: 0 1 auto;
+    display: flex;
+
+    padding-top: 88px;
+  }
+
+  img {
+    filter: drop-shadow(10px 15px 30px rgba(41, 41, 42, 0.5));
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    justify-content: center;
+    &__row {
+      flex-direction: column;
+    }
+  }
+
+  .right-side {
+    justify-content: center;
+    background: linear-gradient(to top, #0c5c70, #2ec5ce);
+  }
+
+  .left-side {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 425px) {
+  .right-side {
+    justify-content: center;
+    flex-wrap: wrap;
+    &__phone-top {
+      margin: 0;
+    }
+    img {
+      max-width: none;
+    }
+  }
+}

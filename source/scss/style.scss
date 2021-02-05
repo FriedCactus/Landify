@@ -7,6 +7,7 @@
 @import "main/achievments";
 @import "main/headline";
 @import "main/trends";
+@import "main/app.scss";
 
 $text: #18191f;
 
@@ -42,4 +43,10 @@ html {
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
+}
+
+@media (max-width: 425px) {
+  .title {
+    font-size: 2em;
+  }
 }
