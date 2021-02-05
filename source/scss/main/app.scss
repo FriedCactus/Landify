@@ -62,6 +62,11 @@
 }
 
 @media (max-width: 768px) {
+  .main {
+    &__app {
+      background: linear-gradient(#2ec5ce, #052c36, #2ec5ce);
+    }
+  }
   .app {
     justify-content: center;
     &__row {
@@ -71,13 +76,14 @@
 
   .right-side {
     justify-content: center;
-    background: linear-gradient(to top, #0c5c70, #2ec5ce);
+    //background: linear-gradient(#052c36, #2ec5ce);
   }
 
   .left-side {
     text-align: center;
     margin-bottom: 30px;
     padding: 0 10%;
+    //background: linear-gradient(to top, #052c36, #2ec5ce);
   }
 }
 
